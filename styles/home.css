@@ -1,0 +1,72 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#search, #genre-filter {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#search {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+#books-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: var(--secondary-color);
+}
+
+#page-numbers {
+  display: flex;
+}
+
+#page-numbers button {
+  background-color: var(--card-background);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#page-numbers button.active {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  #search, #genre-filter {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #books-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

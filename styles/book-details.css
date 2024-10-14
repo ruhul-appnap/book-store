@@ -1,0 +1,43 @@
+#book-details {
+  background-color: var(--card-background);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+#back-to-list {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-list:hover {
+  background-color: var(--secondary-color);
+}
+
+#book-details img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#book-details h2 {
+  margin-bottom: 1rem;
+}
+
+#book-details p {
+  margin-bottom: 0.5rem;
+}
+
+#book-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#book-details ul li {
+  margin-bottom: 0.5rem;
+}
